@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – EzE</title>
+  <meta name="description" content="Privacy policy for the EzE app.">
+  <link rel="alternate" hreflang="vi" href="../../privacy/">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="brand" href="../">EzE</a>
+    <nav><a href="../../privacy/" hreflang="vi">Tiếng Việt</a></nav>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective November 26, 2026</p>
+
+  <p>EzE is an expense tracker for iPhone. This policy explains what data the app handles, where it is stored, what leaves your device, and what rights you have.</p>
+
+  <div class="summary">
+    <ul>
+      <li>Your transactions are <strong>stored only on your iPhone</strong>. We have no server holding your data and cannot see it.</li>
+      <li>No account, no sign-in, no bank connection.</li>
+      <li>Screenshots are read on your device and then discarded.</li>
+      <li>Bank account numbers are not stored.</li>
+      <li>No ads, no analytics, no tracking, no selling of data.</li>
+      <li>The app has no backup of its own: <strong>deleting the app deletes your data</strong> unless you have exported it.</li>
+    </ul>
+  </div>
+
+  <h2>1. Who is responsible</h2>
+  <p>EzE is developed and published by [[TEN_NHA_PHAT_TRIEN]] ("we"). Privacy contact: <a href="mailto:[[EMAIL]]">[[EMAIL]]</a>.</p>
+  <p>Your transaction data is created by you and kept on your device. We do not collect it or process it on any server.</p>
+
+  <h2>2. Data stored on your device</h2>
+  <p>The following data lives in the app's storage on your iPhone and is never sent to us:</p>
+  <ul>
+    <li><strong>Transactions</strong>: amount, currency, date and time, recipient or merchant name, transfer message, bank name, transaction ID, balance after the transaction (when shown on screen), category, wallet and your notes.</li>
+    <li><strong>Text read from screenshots</strong>, kept so transactions can be re-categorized later. Digit sequences that look like account numbers are masked before saving.</li>
+    <li><strong>Recipient identifier</strong>: an HMAC-SHA256 hash of the account number and bank name (or the recipient's name), used to recognize people you pay repeatedly. It cannot be turned back into the account number. The account number itself is not stored.</li>
+    <li><strong>Receipt images</strong>: only if you turn on "Keep screenshot as receipt" in Settings (off by default).</li>
+    <li><strong>Your settings</strong>: categories, categorization rules, country, currency, appearance, app lock, reminder schedule.</li>
+  </ul>
+
+  <h2>3. Screenshots</h2>
+  <p>When you capture a transaction screen with Shortcuts, share an image to the app, or pick one from your library, the app uses Apple's text recognition <strong>on your device</strong> to read the amount, recipient and message. Images are never uploaded. If you turn on "Guess categories with Apple Intelligence", category guessing uses Apple's on-device model, and the data still never leaves your device. After reading, the image is discarded unless you choose to keep it as a receipt. The app only receives the images you pick; it does not access your whole photo library.</p>
+
+  <h2>4. Data that leaves your device</h2>
+  <p>The app makes network requests only in the cases below. None of them sends your transactions, images or notes.</p>
+  <table>
+    <thead><tr><th>Service</th><th>Data sent</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Firebase Remote Config<br>(Google LLC)</td>
+        <td>Firebase installation ID (a random ID per app install), app version, iOS version, device language, country and time zone.</td>
+        <td>Check whether a new merchant dictionary is available. The app does not use Firebase Analytics or Crashlytics.</td>
+      </tr>
+      <tr>
+        <td>Cloudflare R2</td>
+        <td>A request to download the merchant dictionary file. As with any network request, the server sees your IP address.</td>
+        <td>Download merchant names used for automatic categorization.</td>
+      </tr>
+      <tr>
+        <td>Google Sheets</td>
+        <td>Only when you paste a spreadsheet link to import: the app downloads that sheet.</td>
+        <td>Import transactions from your spreadsheet.</td>
+      </tr>
+      <tr>
+        <td>Apple</td>
+        <td>Purchasing EzE Pro through the App Store. The random key used to create recipient identifiers syncs through iCloud Keychain (end-to-end encrypted).</td>
+        <td>Process payment. Keep recipient identifiers consistent across your devices.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Google, Cloudflare and Apple may operate servers outside your country, so the technical data above may be transferred abroad. These providers handle data under their own policies: <a href="https://firebase.google.com/support/privacy">Firebase</a>, <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
+  <p>We never receive your payment details. Apple handles all purchases.</p>
+
+  <h2>5. Device permissions</h2>
+  <ul>
+    <li><strong>Face ID / passcode</strong>: to lock the app if you turn it on. iOS performs the check; the app never receives face data.</li>
+    <li><strong>Notifications</strong>: to remind you to review transactions on the schedule you set. Notifications are created on your device.</li>
+  </ul>
+
+  <h2>6. Backup and deletion</h2>
+  <ul>
+    <li>The app has <strong>no</strong> iCloud sync or backup of its own. If you delete the app, all of its data is deleted and reinstalling will not bring it back.</li>
+    <li>To keep your data, use <strong>Settings › Export &amp; Import</strong> (Excel or CSV). You keep the exported file.</li>
+    <li>An iCloud or computer backup of your <strong>whole iPhone</strong> (made by iOS, not by the app) includes the app's data. It only comes back when you restore the whole device from that backup.</li>
+  </ul>
+
+  <h2>7. Your rights</h2>
+  <p>Under applicable data protection law, including Vietnam's, you have the right to be informed, to give or withdraw consent, and to access, correct, delete and restrict processing of your data. Because your data lives on your device, you exercise these rights directly in the app: edit or delete any transaction, export your data, or delete the app to remove everything.</p>
+  <p>The Firebase installation ID stops being used when you delete the app. For any other question or request, write to us at the address in section 1. We will respond within the time required by law.</p>
+
+  <h2>8. Security</h2>
+  <p>Data is kept in the app's private storage and encrypted by iOS while your device is locked. You can turn on Face ID or passcode lock to hide the app's content. Text read from screenshots has account-number-like digit sequences masked before saving. Receipt images, if you keep them, are stored as the original image.</p>
+
+  <h2>9. Children</h2>
+  <p>EzE is not directed at children and does not knowingly collect children's data.</p>
+
+  <h2>10. Changes</h2>
+  <p>If this policy changes, we will update this page and the effective date at the top. For significant changes, we will also say so in the release notes of the app update.</p>
+
+  <h2>11. Contact</h2>
+  <p><a href="mailto:[[EMAIL]]">[[EMAIL]]</a></p>
+
+  <footer>© 2026 EzE · <a href="../">Support</a> · <a href="../../privacy/" hreflang="vi">Tiếng Việt</a></footer>
+</main>
+</body>
+</html>
