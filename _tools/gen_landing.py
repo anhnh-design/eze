@@ -72,7 +72,7 @@ C = {
   "free": ("Miễn phí", "0 ₫", "Dùng mãi mãi",
            ["Ghi tự động và nhập tay không giới hạn", "Báo cáo đầy đủ", "Mỗi loại một ví: chi tiêu, thẻ tín dụng, tiết kiệm"]),
   "pro": ("EzE Pro", "Trọn đời", "99.000 ₫", "Trả một lần, không đăng ký",
-          ["Mọi thứ của bản miễn phí", "Không giới hạn số ví", "Không quảng cáo", "Khôi phục trên iPhone khác cùng Apple ID"]),
+          ["Mọi thứ của bản miễn phí", "Không giới hạn số ví", "Khôi phục trên iPhone khác cùng Apple ID"]),
   "support_eyebrow": "Hỗ trợ",
   "support_h2": "Câu hỏi thường gặp",
   "faq": [
@@ -150,7 +150,7 @@ C = {
   "free": ("EzE", "Free", "Forever",
            ["Unlimited automatic and manual logging", "Full reports", "One wallet of each kind: spending, credit card, savings"]),
   "pro": ("EzE Pro", "Lifetime", "Pay once", "No subscription. Price shown in the App Store.",
-          ["Everything in Free", "Unlimited wallets", "No ads", "Restore on another iPhone with the same Apple ID"]),
+          ["Everything in Free", "Unlimited wallets", "Restore on another iPhone with the same Apple ID"]),
   "support_eyebrow": "Support",
   "support_h2": "Frequently asked questions",
   "faq": [
